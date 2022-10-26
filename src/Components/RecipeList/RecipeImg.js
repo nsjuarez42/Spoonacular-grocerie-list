@@ -3,3 +3,5 @@ function RecipeImg(props){
         <img src={props.imgSrc}/>
     </div>)
 }
+
+export default RecipeImg

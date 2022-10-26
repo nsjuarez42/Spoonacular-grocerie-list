@@ -1,5 +1,7 @@
-function RecipeBtn(){
+function RecipeBtn(props){
     return(<div>
-        <button>Grocerie list</button>
+        <button onClick={props.onClick}>Grocerie list</button>
     </div>)
 }
+
+export default RecipeBtn
