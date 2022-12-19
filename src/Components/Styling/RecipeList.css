@@ -1,0 +1,47 @@
+.recipeList{
+    display:grid;
+    grid-template-columns: repeat(3,33%);
+}
+
+.recipeGroList{
+    text-align: left;
+    margin-top: 20%;
+    margin-left: 30%;
+    display:flex;
+    flex-direction: column;
+}
+
+.recipeSelected{
+    display: grid;
+    grid-template-columns: repeat(2,50%);
+}
+
+.recipeIns{
+    display: grid;
+    grid-template-columns: 125% 75%
+}
+
+.recipeInstruction{
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+}
+.recipeInstruction div{
+    display:flex;
+    flex-direction: row;
+}
+
+.recipeInstruction .recipeInstructionIngr{
+    display:grid;
+    grid-template-columns: 20% 80%;
+}
+
+.recipeIngr{
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+}
+.recipeIngrTitle{
+    text-align: center;
+}
+

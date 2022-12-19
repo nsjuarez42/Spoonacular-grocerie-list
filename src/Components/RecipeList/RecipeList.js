@@ -1,5 +1,7 @@
 import Recipe from "./Recipe"
 import {useState} from 'react'
+import '../Styling/RecipeList.css'
+
 
 function RecipeList(props){
     const {list} = props
@@ -8,7 +10,7 @@ function RecipeList(props){
     const [recipeData,setRecipeData] = useState({})
 
 const recipes = list.map(el=>{
-    return(<Recipe 
+    return(<Recipe className="recipe"
         title={el.title} 
         key={el.id} 
         imgSrc={el.image} 
@@ -37,7 +39,7 @@ const recipes = list.map(el=>{
       />)
     }else{
   
-        return(<div>
+        return(<div className="recipeList">
             {recipes}
          </div>)
     }
