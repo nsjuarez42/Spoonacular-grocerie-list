@@ -1,0 +1,14 @@
+.searchRecipe{
+
+}
+.searchRecipeForm{
+}
+.searchRecipeBar input{
+    background-color: #E5A478;
+    border-radius: 15px;
+    border: #E5A478;
+}
+
+.searchRecipeBtn input{
+    background-color: #E76666;
+}

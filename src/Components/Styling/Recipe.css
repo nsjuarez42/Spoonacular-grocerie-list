@@ -1,0 +1,18 @@
+.recipe{
+ background-color: #E5A478;
+ margin:8%;
+}
+
+.recipe img{
+width:95%;
+}
+
+.recipeSelected{
+    display: grid;
+    grid-template-columns: repeat(2,50%);
+}
+
+.recipeBtn button{
+  background-color: #E76666;
+  border: 2%;
+}

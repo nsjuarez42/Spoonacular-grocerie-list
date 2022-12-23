@@ -5,6 +5,7 @@ import axios from "axios";
 import apikey from "../Common/Apikey";
 import Ingredient from "./Ingredient";
 import Instruction from "./Instruction";
+import '../Styling/Recipe.css'
 
 function Recipe(props) {
   const { recipeSelected, setRecipeSelected } = props;
@@ -93,9 +94,9 @@ function Recipe(props) {
         </div>
 
         <div className="recipeGroList">
-          <PTitle title={`Price per serving: ${pricePerServing}`} />
+          <PTitle title={`Price per serving: $${pricePerServing}`} />
           <PTitle title={`Servings: ${servings}`} />
-          <PTitle title={`Total price: ${totalPrice}`} />
+          <PTitle title={`Total price: $${totalPrice}`} />
           <RecipeBtn onClick={onClickBtn} id={props.id} clicked={true} />
         </div>
 

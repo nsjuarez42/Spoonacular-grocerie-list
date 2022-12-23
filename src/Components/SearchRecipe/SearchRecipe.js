@@ -5,6 +5,7 @@ import axios from "axios"
 import apikey from "../Common/Apikey"
 import { useState } from "react"
 import RecipeList from "../RecipeList/RecipeList"
+import '../Styling/SearchRecipe.css'
 
 const Api_url = "https://api.spoonacular.com/recipes/complexSearch" + `?apiKey=${apikey}`
 
@@ -23,22 +24,28 @@ function SearchRecipe(){
     setList(response.data.results)
   }
    if(list.length == 0){
-    return(<div>
+    return(<div className="searchRecipe">
       <PTitle title="Search recipe"/>
+      <div className="searchRecipeForm">
       <form onSubmit={onSubmit}>
       <SearchRecipeBar/>
       <SearchRecipeBtn/>
        </form>
+       </div>
      </div>)
    }else{
     console.log(list)
     return(<div>
+      <div className="searchRecipe">
       <PTitle title="Search recipe"/>
+      <div className="searchRecipeForm">
       <form onSubmit={onSubmit}>
       <SearchRecipeBar/>
       <SearchRecipeBtn/>
-      <RecipeList list={list}/>
        </form>
+       </div>
+       </div>
+       <RecipeList list={list}/>
      </div>)
    }
 

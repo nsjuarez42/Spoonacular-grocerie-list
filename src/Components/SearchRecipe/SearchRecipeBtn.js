@@ -1,5 +1,5 @@
 function SearchRecipeBtn(){
-    return(<div>
+    return(<div className="searchRecipeBtn">
         <input type="submit"/>
     </div>)
 }

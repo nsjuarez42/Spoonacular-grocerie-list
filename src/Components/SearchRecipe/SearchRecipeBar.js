@@ -1,5 +1,5 @@
 function SearchRecipeBar(){
-    return(<div>
+    return(<div className="searchRecipeBar">
         <input type="text"/>
     </div>)
 }
